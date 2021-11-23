@@ -41,9 +41,9 @@ h2 {
   text-align: left;
 }
 h3 {
-  color: purple;
+  color: silver;
   font-family: "Gill Sans", Arial, sans-serif;
-  font-size: 30pt;
+  font-size: 50pt;
   text-align: center;
 }
 th {
@@ -92,17 +92,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #cccccc;
-  background-image: url("https://media.giphy.com/media/JmbbuW8MeuHlDenW3K/giphy.gif");
+  background-image: url("https://media.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy-downsized-large.gif");
 }
 .id {
   color: #20303c;
   font-weight: bold;
 }
 p {
-  color: #ff0099ff;
-  text-align: center;
+  color: white;
   font-size: 30em;
-  margin: auto;
   width: 300px;
 }
 .dotted {
@@ -137,6 +135,13 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-image: url("https://media.giphy.com/media/3o7TKGAJ7CLp95cNI4/giphy.gif");
+}
+nav {
+  color: silver;
+  font-family: "Gill Sans", Arial, sans-serif;
+  font-size: 50pt;
+  text-align: center;
 }
 .class {
   margin: 10rem;
