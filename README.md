@@ -1,2 +1,2 @@
-# Biography
-CS601_HW1_Othman
+# Resume
+CS601_TermProject (Draft)_Othman
