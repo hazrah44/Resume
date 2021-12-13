@@ -1,88 +1,65 @@
-/*Using HTML 5, CSS, and JavaScript (no other languages):
-Write a JavaScript program that performs the following actions (in sequence,
-step-by-step):
-1. Welcomes the visitor with an alert
-2. Prompts the visitor for his/her name
-3. Displays the users name with an alert
-a. Such as “Welcome [name]!”
-4. Asks the visitor to enter two numbers with a prompt
-a. They can enter one number with one prompt and the second
-number with a second prompt, or you can ask them to enter them in
-one prompt, separated by a space or comma.
-5. Uses a function (that you create) to add these two visitor entered numbers
-and adds them together and returns the result to the visitor with an alert.
-Concatenate the result of adding their two numbers together at the end of
-this phrase: “The sum of your two numbers is: [result]“
-6. Add conditional logic (if/else):
-a. If the result of adding the two numbers together is greater than 10:
-i. Alert: “That is a big number.”
-b. If the result of adding the two numbers together is less than or
-equal to 10:
-i. Alert: “That is a small number.”
-7. Add a loop:
-a. Prompt the user and ask if they want to add two numbers again, if
-they do (check for yes/no):
-i. Let the user provide two numbers again and produce the
-result with an alert (steps 4-7 repeat)
-b. If they don’t want to continue adding numbers:
-i. Thank the visitor for using the program and stop.
-The use of CSS is not required, it is optional for this part of the assignment.*/
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 300%;
-  text-shadow: 2px 2px 3px #666666;
-  padding-bottom: 10px;
-  color: #ff0099;
+nav {
+  border-bottom: 1px solid black;
 }
+
+.navigation ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navigation a::after {
+  display: inline-block;
+  color: #000;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
 h2 {
-  color: #ff0099;
+  color: black;
   font-size: 3.3em;
   margin: 20px 0 0 0;
-  text-align: left;
 }
-h3 {
-  color: silver;
-  font-family: "Gill Sans", Arial, sans-serif;
-  font-size: 50pt;
-  text-align: center;
-}
+
 th {
-  color: white;
+  color: blue;
 }
 a {
-  color: #ff0099;
+  color: black;
   font-size: 15pt;
 }
 :link {
   color: red;
 }
 :visited {
-  color: white;
+  color: black;
 }
 :hover {
-  color: hotpink;
+  color: black;
 }
 :active {
   color: blue;
 }
 img {
-  width: 50%;
+  width: 30%;
   height: auto;
   background-size: cover;
   border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   border-radius: 50%;
   display: block;
-  opacity: 0.5;
-  filter: sepia(100%);
 }
 i {
   display: inline;
 }
-
 body {
-  color: #20303c;
+  color: black;
   width: 100%;
   height: 100%;
   margin: 2em;
@@ -91,34 +68,34 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #cccccc;
-  background-image: url("https://media.giphy.com/media/xT9IgN8YKRhByRBzMI/giphy-downsized-large.gif");
+  background-color: lightblue;
 }
 .id {
-  color: #20303c;
-  font-weight: bold;
+  color: #9ac6e7;
 }
 p {
-  color: white;
-  font-size: 30em;
-  width: 300px;
+  color: black;
 }
 .dotted {
   outline-style: groove;
 }
-.username {
-  font-weight: bold;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-.title {
-  font-size: 10rem;
+label {
+  font-size: larger;
+  text-align: center;
 }
 div {
-  width: 100px;
-  height: 50px;
-  background: hotpink;
-  position: relative;
-  animation: mymove 2s;
-  animation-iteration-count: infinite;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 @keyframes mymove {
   from {
@@ -131,20 +108,50 @@ div {
 .credits {
   font-family: "Courier New", Courier, monospace;
 }
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-image: url("https://media.giphy.com/media/3o7TKGAJ7CLp95cNI4/giphy.gif");
 }
-nav {
-  color: silver;
-  font-family: "Gill Sans", Arial, sans-serif;
-  font-size: 50pt;
-  text-align: center;
+li {
+  list-style-type: none;
+  font-size: 16pt;
 }
-.class {
-  margin: 10rem;
+.mail {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 400px;
+  background: #d8f1f8;
+  border: 1px solid silver;
+}
+.mail h2 {
+  margin-left: 38px;
+}
+input {
+  font-size: 20pt;
+}
+textarea:focus {
+  background-color: lightyellow;
+}
+input submit {
+  font-size: 12pt;
+}
+.rq {
+  color: #ff0000;
+  font-size: 10pt;
 }
 @media all and (max-width: 600px) {
   p {
@@ -157,4 +164,82 @@ nav {
     font-size: 1.5rem;
     line-height: 1.5;
   }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
 }
