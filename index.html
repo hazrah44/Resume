@@ -1,33 +1,31 @@
-<!--Requirements:
-Using HTML 5, CSS, and JavaScript (no other languages):
-Write a JavaScript program that performs the following actions (in sequence,
-step-by-step):
-1. Welcomes the visitor with an alert
-2. Prompts the visitor for his/her name
-3. Displays the users name with an alert
-a. Such as “Welcome [name]!”
-4. Asks the visitor to enter two numbers with a prompt
-a. They can enter one number with one prompt and the second
-number with a second prompt, or you can ask them to enter them in
-one prompt, separated by a space or comma.
-5. Uses a function (that you create) to add these two visitor entered numbers
-and adds them together and returns the result to the visitor with an alert.
-Concatenate the result of adding their two numbers together at the end of
-this phrase: “The sum of your two numbers is: [result]“
-6. Add conditional logic (if/else):
-a. If the result of adding the two numbers together is greater than 10:
-i. Alert: “That is a big number.”
-b. If the result of adding the two numbers together is less than or
-equal to 10:
-i. Alert: “That is a small number.”
-7. Add a loop:
-a. Prompt the user and ask if they want to add two numbers again, if
-they do (check for yes/no):
-i. Let the user provide two numbers again and produce the
-result with an alert (steps 4-7 repeat)
-b. If they don’t want to continue adding numbers:
-i. Thank the visitor for using the program and stop.
-The use of CSS is not required, it is optional for this part of the assignment.-->
+<!--Overview
+This course includes a term project that evaluates the student’s mastery of the course material in order to create professional web sites and applications.
+Students will be evaluated on how well they have mastered the following topics:
+•	Web languages 
+•	HTML5
+•	CSS 3
+•	JavaScript
+•	Vue
+•	Web page layout and design
+•	Document object model (DOM)
+•	Website usability
+•	Project management for web design and development
+Deliverable
+You will be required to create a comprehensive website consisting of 5-10 content pages using the knowledge you have learned in this course. Your code should be stored on GitHub (github.com) and publicly available for view. Please refer to the documentation on Getting Started with GitHub to get setup.
+The term project’s default topic is YOU! 
+Create a website that includes a portfolio about yourself. You can choose one or more of the following features:
+•	Include your biography
+•	Share your interests
+•	Provide a web-based contact form
+•	Display your resume
+•	Include a photo gallery
+•	Showcase skills you learned in this course
+It is expected that you will utilize the majority of the material covered in the course to implement your project.
+Unless approved by your facilitator you are restricted to the default topic described above. Don’t construe this as a requirement, it would be great to have you work on a topic that better suits your interests or could actually fulfill a need or desire you currently have. If you would like to choose a different topic or direction, just be sure to have your alternative topic approved by your course facilitator before the start of week three.
+If you are going to be in the job market in the near future—creating a portfolio about your education makes a lot of sense and is strongly recommended.
+
+In addition, a mid-term review (at the end of Module 3) may also be offered as an optional event in order for students to receive feedback on their project before they finish and submit the assignment.
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,21 +33,31 @@ The use of CSS is not required, it is optional for this part of the assignment.-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>My Biography</title>
+    <title>Home</title>
   </head>
   <body>
-    <img src="images/HMO.jpg" alt="my picture" class="mypicture as a person" />
-    <nav>
-      <i><a href="index.html">Home</a></i>
-      <i><a href="about.html">About</a></i>
-      <i><a href="video.html">Video</a></i>
-      <i><a href="home.html">Graphic</a></i>
-      <i><a href="list.html">Contact</a></i>
+    <img src="images/Mypicture2.jpg" alt="Picture" class="Picture" />
+    <nav class="navigation">
+      <ol>
+        <li class="navigation"><a href="index.html">HOME</a></li>
+        <li class="navigation"><a href="background.html">ABOUT ME</a></li>
+        <li class="navigation"><a href="music.html">MUSIC</a></li>
+        <li class="navigation"><a href="gallery.html">GALLERY</a></li>
+        <li class="navigation"><a href="resume.html">RESUME</a></li>
+        <li class="navigation"><a href="contact.html">CONTACT</a></li>
+        <li class="navigation">
+          <a href="contact2.html">SHOWCASE SKILL IN THIS COURSE</a>
+        </li>
+      </ol>
     </nav>
-    <button onclick="greetUser()">Suprise Click</button>>
-    <h3>Explore My Website</h3>
-    <p>Created by: Hazrah Othman, Boston University</p>
-
+    <h1 style="color: blue">HOME</h1>
+    <p>
+      This is a website that I build for the MidTerm Assignment for MET CS 601
+      Web Application Development
+    </p>
+    <footer>Created by: Hazrah Othman</footer>
+    <br /><br /><br /><br />
+    <button onclick="greetUser()">Suprise Click</button>
     <p id="demo"></p>
     <script src="index.js"></script>
   </body>
